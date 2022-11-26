@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="404.0" minWidth="600.0" prefHeight="600.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.hvolk.hvsupplier.GuiContactController">
+   <children>
+      <Pane layoutY="2.0" prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <VBox layoutX="4.0" layoutY="14.0" prefHeight="376.0" prefWidth="225.0">
+               <children>
+                  <Label minHeight="20.0" minWidth="140.0" text="Firma:">
+                     <VBox.margin>
+                        <Insets left="50.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Kontakt Name:">
+                     <VBox.margin>
+                        <Insets left="50.0" top="40.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Firma Straße:">
+                     <VBox.margin>
+                        <Insets left="50.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Firma PLZ - Ort:">
+                     <VBox.margin>
+                        <Insets left="50.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Kontakt Tel. Nr:">
+                     <VBox.margin>
+                        <Insets left="50.0" top="35.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Kontakt Mobil Nr:">
+                     <VBox.margin>
+                        <Insets left="50.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Kontakt Email:">
+                     <VBox.margin>
+                        <Insets left="50.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="40.0" />
+               </padding></VBox>
+            <VBox layoutX="229.0" layoutY="14.0" prefHeight="388.0" prefWidth="225.0">
+               <children>
+                  <TextField fx:id="txtContactFacility" editable="false" style="-fx-background-color: rgba(0, 0, 0, 0.09);">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtContactName" editable="false" style="-fx-background-color: rgba(0, 0, 0, 0.09);">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtContactStreet" editable="false" style="-fx-background-color: rgba(0, 0, 0, 0.09);">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtContactPCodeCity" editable="false" style="-fx-background-color: rgba(0, 0, 0, 0.09);">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtContactPhoneNr" editable="false" style="-fx-background-color: rgba(0, 0, 0, 0.09);">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtContactMobilNr" editable="false" style="-fx-background-color: rgba(0, 0, 0, 0.09);">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtContactEmail" editable="false" minWidth="350.0" style="-fx-background-color: rgba(0, 0, 0, 0.09);">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets top="40.0" />
+               </padding>
+            </VBox>
+            <Label layoutX="155.0" layoutY="6.0" text="Kontakt Daten von Outlook " textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" top="10.0" />
+               </padding></Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

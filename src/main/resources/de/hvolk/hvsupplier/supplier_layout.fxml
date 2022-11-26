@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER_LEFT" minHeight="698.0" minWidth="1280" prefHeight="698.0" prefWidth="1281.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.hvolk.hvsupplier.GuiSupplierController">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+
+    <VBox fx:id="vBoxSupplierOverview" minHeight="580" minWidth="280" spacing="5">
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        </padding>
+
+        <Label fx:id="lblSupplierOverview" alignment="CENTER" minHeight="35" minWidth="270" text="Lieferanten Übersicht">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblSupplierIdSearch" minHeight="20.0" minWidth="270" text="Lieferant Name/Suchen:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtSupplierName" minHeight="35" minWidth="270" promptText="Lieferant Name">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Button fx:id="btnStartSupplierNameSearch" minHeight="20.0" minWidth="270" onAction="#startSupplierNameSearch" text="Suchen">
+            <font>
+                <Font size="18.0" />
+            </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+        </Button>
+        <ListView fx:id="listViewSuppliers" minHeight="390.0" minWidth="270" prefHeight="390.0" prefWidth="270.0">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin></ListView>
+      <Button fx:id="btnAllReset" minHeight="20.0" minWidth="270.0" mnemonicParsing="false" onAction="#showAllSuppliers" text="Alle Felder Reseten">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </Button>
+         <Button fx:id="btnDeleteSupplier" minHeight="20.0" minWidth="270" onAction="#deleteSupplier" text="Lieferant Löschen">
+             <font>
+                 <Font size="18.0" />
+             </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         </Button>
+    </VBox>
+
+
+    <VBox fx:id="vBoxSupplierDetails" minHeight="580" minWidth="280" spacing="5">
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        </padding>
+
+        <Label fx:id="lblSupplierDetails" alignment="CENTER" minHeight="35" minWidth="270" text="Lieferantendetails">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+      <Label fx:id="lblSupplierStreet" minHeight="20.0" minWidth="270.0" text="Straße:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSupplierStreet" disable="true" minHeight="35.0" minWidth="270.0" promptText="Straße:">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+         <Label fx:id="lblSupplierPostCode" minHeight="20.0" minWidth="270" text="Postleitzahl:">
+             <font>
+                 <Font size="14.0" />
+             </font>
+         </Label>
+         <TextField fx:id="txtSupplierPostCode" disable="true" minHeight="35" minWidth="270" promptText="Postleitzahl">
+             <font>
+                 <Font size="18.0" />
+             </font>
+         </TextField>
+         <Label fx:id="lblSupplierCity" minHeight="20.0" minWidth="270" text="Ort:">
+             <font>
+                 <Font size="14.0" />
+             </font>
+         </Label>
+         <TextField fx:id="txtSupplierCity" disable="true" minHeight="35" minWidth="270" promptText="Adresse">
+             <font>
+                 <Font size="18.0" />
+             </font>
+         </TextField>
+
+         <Label fx:id="lblSupplierDeliveryMaterial" minHeight="20.0" minWidth="270" text="Mögliche Lieferungen:">
+             <font>
+                 <Font size="14.0" />
+             </font>
+         </Label>
+         <TextField fx:id="txtSupplierDeliveryMaterial" disable="true" minHeight="35" minWidth="270" promptText="Frachgut,Container,Flüssigkeiten usw.">
+             <font>
+                 <Font size="18.0" />
+             </font>
+         </TextField>
+         <Label fx:id="lblSupplierPrefertDeliveryMode" minHeight="20.0" minWidth="270" text="Bevorzugte Lieferart:">
+             <font>
+                 <Font size="14.0" />
+             </font>
+         </Label>
+         <TextField fx:id="txtSupplierPrefertDeliveryMode" disable="true" minHeight="35" minWidth="270" promptText="LKW,Transporter,Schiff usw.">
+             <font>
+                 <Font size="18.0" />
+             </font>
+         </TextField>
+        <Label fx:id="lblSupplierAverageDelliveryDays" minHeight="20.0" minWidth="270" text="Lieferzeit (durchschnittlich) :">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtSupplierAverageDeliveryDays" disable="true" minHeight="35" minWidth="270" promptText="Lieferzeit">
+            <font>
+        <Font size="18.0" />
+            </font>
+        </TextField>
+      <Button fx:id="btnEdit" disable="true" minHeight="20.0" minWidth="270.0" mnemonicParsing="false" onAction="#btnEdit" text="Lieferant Daten ändern">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="2.0" />
+         </VBox.margin>
+      </Button>
+         <Label fx:id="lblSupplierAdministration" alignment="CENTER" minHeight="35" minWidth="270" text="Verwaltung">
+             <font>
+                 <Font size="18.0" />
+             </font>
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+         </Label>
+      <Button fx:id="bntPersonalContactViewOpen" minHeight="20.0" minWidth="270.0" mnemonicParsing="false" onAction="#bntPersonalContactViewOpen" text="Personal Kontakt">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="7.0" />
+         </VBox.margin>
+      </Button>
+         <Button fx:id="btnSubmitSupplier" minHeight="20.0" minWidth="270" onAction="#submitSupplier" text="Speichern">
+             <font>
+                 <Font size="18.0" />
+             </font>
+         </Button>
+     </VBox>
+   <VBox id="vBoxDeliveries" fx:id="vBoxDeliveries" minHeight="650.0" minWidth="661.0" prefHeight="747.0" prefWidth="661.0" style="-fx-background-color: rgba(39, 217, 245, 0.24);">
+      <children>
+         <Label text="Lieferungen des Lieferantens">
+            <font>
+               <Font size="18.0" />
+            </font>
+            <VBox.margin>
+               <Insets left="200.0" />
+            </VBox.margin>
+            <padding>
+               <Insets top="10.0" />
+            </padding>
+         </Label>
+         <ListView id="listViewDel" fx:id="listViewDeliveries" disable="true" prefHeight="510.0" prefWidth="661.0">
+            <VBox.margin>
+               <Insets top="30.0" />
+            </VBox.margin>
+         </ListView>
+         <Button fx:id="bntNewDeliveryRequest" minHeight="20.0" minWidth="270.0" mnemonicParsing="false" onAction="#bntNewDeliveryRequest" text="Neuer Auftrag">
+            <VBox.margin>
+               <Insets left="200.0" top="30.0" />
+            </VBox.margin>
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+      </children>
+   </VBox>
+ </HBox>
