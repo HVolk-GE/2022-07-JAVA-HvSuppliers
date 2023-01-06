@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 import java.util.List;
 
 /**
- * Diese Klasse deiniert was alle Datenbanktabellen
+ * Diese Klasse definiert was alle Datenbanktabellen
  * und Ihre Dao-Klassen gemeinsam haben. Halbe Wahrheit, wenn man mehr als eine Tabelle hat und eine Teilmenge daraus holen möchte,
  * braucht man eine eigene get funktion, da diese hier nicht beruecksichtigt (Teilmengen) wurden.
  * <ul>
