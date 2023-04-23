@@ -1,0 +1,9 @@
+{
+  "DatabaseDriver": "org.mariadb.jdbc.Driver",
+  "DatabaseConnectUri": "jdbc:mariadb://",
+  "DatabaseServerNameIP": "localhost",
+  "DatabaseTcpPortNumber": "3306",
+  "DatabaseName": "suppliers",
+  "DatabaseUserName": "root",
+  "DatabaseUserPasswort": ""
+}
