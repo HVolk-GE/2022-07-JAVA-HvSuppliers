@@ -6,7 +6,7 @@ package de.hvolk.hvsupplier.settings;
 public class Settings {
 
     //region 0. global constants
-    public static final String APPLICATION_NAME = "Supplers";
+    public static final String APPLICATION_NAME = "Suppliers";
     public static final String PRODUCTION_PROCESS_LAYOUT_PATH = "supplier_layout.fxml";
     public static final int MAIN_SCENE_HEIGHT = 700;
     public static final int MAIN_SCENE_WIDTH = 1280;

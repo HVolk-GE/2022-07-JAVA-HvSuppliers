@@ -5,5 +5,5 @@
   "DatabaseTcpPortNumber": "3306",
   "DatabaseName": "suppliers",
   "DatabaseUserName": "root",
-  "DatabaseUserPasswort": ""
+  "DatabaseUserPasswort": "root"
 }
